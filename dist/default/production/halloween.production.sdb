@@ -1,0 +1,125 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F627A ]
+[d frameptr 0 ]
+"100 C:\Users\kanderson\Documents\halloween\main.c
+[e E477 . `uc
+IDLE 0
+ANIMATION_1 1
+ANIMATION_2 2
+ANIMATION_3 3
+]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"102 C:\Users\kanderson\Documents\halloween\main.c
+[v _switch_state switch_state `(v  1 e 1 0 ]
+[v i1_switch_state switch_state `(v  1 e 1 0 ]
+"108
+[v _interrupt_handler interrupt_handler `II(v  1 e 1 0 ]
+"119
+[v _initialize_hw initialize_hw `(v  1 e 1 0 ]
+"139
+[v _main main `(v  1 e 1 0 ]
+"166 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f627a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S59 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S68 . 1 `S59 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES68  1 e 1 @6 ]
+[s S27 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"333
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S41 . 1 `S27 1 . 1 0 `S36 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES41  1 e 1 @11 ]
+"767
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+[s S85 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"857
+[s S92 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S96 . 1 `S85 1 . 1 0 `S92 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES96  1 e 1 @129 ]
+"907
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"969
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"33 C:\Users\kanderson\Documents\halloween\main.c
+[v _sequence_1 sequence_1 `[11][2]i  1 e 44 0 ]
+"49
+[v _sequence_2 sequence_2 `[13][2]i  1 e 52 0 ]
+"66
+[v _sequence_3 sequence_3 `[19][2]i  1 e 76 0 ]
+"90
+[v _loop_count loop_count `ui  1 e 2 0 ]
+"91
+[v _sequence_count sequence_count `ui  1 e 2 0 ]
+"100
+[v _state state `uc  1 e 1 0 ]
+"139
+[v _main main `(v  1 e 1 0 ]
+{
+"224
+} 0
+"102
+[v _switch_state switch_state `(v  1 e 1 0 ]
+{
+[v switch_state@new_state new_state `uc  1 a 1 wreg ]
+[v switch_state@new_state new_state `uc  1 a 1 wreg ]
+[v switch_state@new_state new_state `uc  1 a 1 5 ]
+"106
+} 0
+"119
+[v _initialize_hw initialize_hw `(v  1 e 1 0 ]
+{
+"137
+} 0
+"108
+[v _interrupt_handler interrupt_handler `II(v  1 e 1 0 ]
+{
+"117
+} 0
+"102
+[v i1_switch_state switch_state `(v  1 e 1 0 ]
+{
+[v i1switch_state@new_state new_state `uc  1 a 1 wreg ]
+[v i1switch_state@new_state new_state `uc  1 a 1 wreg ]
+[v i1switch_state@new_state new_state `uc  1 a 1 1 ]
+"106
+} 0
